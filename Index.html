@@ -1,31 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft</title>
+    <title>Accueil</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Minecraft</h1>
-        <img src="minecraft-logo.svg" alt="Minecraft_logo" class="top-left-image">
+        <img src="Images/minecraft-logo.svg" alt="Minecraft_logo" class="top-left-image">
     </header>
-    <main>
-        <section class="content-container">
-            <div class="center-paragraph">
-                <h2>Une brève histoire de Minecraft</h2>
-                <h3>Minecraft est un jeu bac à sable développé par Notch en 2009. Il est disponible sur plusieurs plateformes et compte aujourd'hui plus de 200 millions de copies vendues. (sans compter les millions de cracks)</h3>
-            </div>
-            <img src="Notch.webp" alt="Notch" class="right-image">
-        </section>
-        <section class="content-container">
-            <div class="center-paragraph">
-                <h2>Une rapide chronologie</h2>
-                
-                <p>Le jeu est connu pour sa liberté de création et son monde infini. Il est possible de construire des bâtiments, des machines, des circuits électroniques, des fermes, des villes, des mondes entiers, etc.</p>
-            </div>
-        </section>
-    </main>
+    
+    <table style="width:100%">
+        <tr>
+            <th>
+                <li><a href="index.html" class = "current-page">Accueil</a></li>
+            <th>
+                <li><a href="histoire.html">Histoire de Minecraft</a></li>
+            </th>
+            <th>
+                <li><a href="redstone.html">Redstone</a></li>
+            </th>
+            <th>
+                <li><a href="generation.html">La génération</a></li>
+            </th>
+            <th>
+                <li><a href="communaute.html">Communauté</a></li>
+            </th>
+        </tr>
+    </table>
+    <h2 class = "title"> Pourquoi Minecraft?</h2>
+    <p class = "texte">Minecraft est un jeu très spécial pour moi, c'est celui sur lequel j'ai passé le plus de temps, plus de 6000 heures de jeu... 
+        Il m'a donc semblé logique d'en faire le thème de mon site pour présenter ce que j'aime faire sur ce jeu et pourquoi il me passione autant.
+        C'est également à travers Minecraft que je me suis intéressé à la programmation. Minecraft est codé en Java, et il est possible de créer des mods pour le jeu en utilisant ce langage. 
+        La communauté est très active et il existe des dizaines de milliers de mods et plugins pour le jeu. J'ai également porté un grand intérêt à la redstone, qui est un élément essentiel de Minecraft.
+        Cette passion a donc constitué une porte vers d'autres domaines, comme la programmation, l'électronique, la mécanique, et même le graphisme (pour les textures des mods). 
+        J'espère pouvoir faire comprendre à l'utilisateur qui consulte ce site pourquoi Minecraft est un jeu si spécial et pourquoi il est si populaire. Je ne m'attarderai pas sur le gameplay de Minecraft, car il est très connu. Je me pencherai sur des aspects bien précis qui me plaisent.
+    </p>
+    <section>
+        <h2>Recherche sur le Wiki Minecraft</h2>
+        <form action="https://minecraft.fandom.com/wiki/Special:Search" method="get" target="_blank">
+            <label for="search">Rechercher :</label>
+            <input type="text" id="search" name="query" required>
+            <button type="submit">Rechercher</button>
+        </form>
+    </section>
+    <img src="Images/minecraft-cover.jpeg" alt="minecraft-cover">
 </body>
 </html>
